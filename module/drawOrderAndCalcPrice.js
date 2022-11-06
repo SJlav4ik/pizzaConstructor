@@ -2,7 +2,6 @@ import drawPizza from "./drawPizza.js";
 import removeElement from "./removeElement.js";
 import removeElements from "./removeElements.js";
 import base from "../index.js"
-// import checkOrderButton from "checkOrderButton.js"
 
 let viewOrder = document.getElementById('viewOrder');
 export let stage;
