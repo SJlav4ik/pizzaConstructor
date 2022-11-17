@@ -1,6 +1,6 @@
 import drawPizza from "./drawPizza.js";
 
-export default function removeElement(element,currentElem){
+export default function removeElement(element,currentElem, stage){
     element.className='';
     let priceElem = document.getElementById('totalPrice');
     let price = priceElem.innerText;
