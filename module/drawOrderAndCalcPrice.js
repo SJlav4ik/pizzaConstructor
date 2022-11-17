@@ -20,7 +20,7 @@ export default function drawOrderAndCalcPrice(){
                 spanElem.innerText = divs.innerText;
                 spanElem.className = 'menuElements';
                 spanElem.setAttribute('price',price);
-                spanElem.addEventListener('click', ()=>{stage = removeElement(divs,spanElem,stage)}, {once:true});
+                spanElem.addEventListener('click', ()=>{stage = removeElement(divs,spanElem, stage)}, {once:true});
                 elements.push(spanElem);
                 totalPrice += Number(price);
             }        
@@ -37,7 +37,7 @@ export default function drawOrderAndCalcPrice(){
                 let br = document.createElement("br");
                 divElem.appendChild(br);
                 divElem.appendChild(spanElem);
-                spanElem.addEventListener('click', ()=>{br.parentElement.removeChild(br)}, {once:true});                
+                spanElem.addEventListener('click', ()=>{br.parentElement.removeChild(br)}, {once:true});               
             }
             viewOrderContent.push(divElem);
         }
