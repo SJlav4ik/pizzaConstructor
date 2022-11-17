@@ -8,6 +8,7 @@ export default function removeElement(element,currentElem, stage){
     priceElem.innerText = value+"$";
     let spans = currentElem.parentElement.getElementsByTagName('span');
         if(spans.length > 2){
+            // currentElem.parentElement.removeChild(currentElem.parentElement.getElementsByTagName('br')[0]);
             currentElem.parentElement.removeChild(currentElem);   
         }
         else
@@ -16,5 +17,5 @@ export default function removeElement(element,currentElem, stage){
             stage--;
             drawPizza(stage);
         } 
-        return stage; 
+        return stage;
 }
