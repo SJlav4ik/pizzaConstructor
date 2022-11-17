@@ -34,8 +34,10 @@ export default function drawOrderAndCalcPrice(){
             spanHeader.addEventListener('click', ()=>{removeElements(elements)}, {once:true});
             divElem.appendChild(spanHeader);
             for (let spanElem of elements){
-                divElem.appendChild(document.createElement("br"))
-                divElem.appendChild(spanElem)               
+                let br = document.createElement("br");
+                divElem.appendChild(br);
+                divElem.appendChild(spanElem);
+                spanElem.addEventListener('click', ()=>{br.parentElement.removeChild(br)}, {once:true});                
             }
             viewOrderContent.push(divElem);
         }
