@@ -20,7 +20,7 @@ export default function drawOrderAndCalcPrice(){
                 spanElem.innerText = divs.innerText;
                 spanElem.className = 'menuElements';
                 spanElem.setAttribute('price',price);
-                spanElem.addEventListener('click', ()=>{removeElement(divs,spanElem)}, {once:true});
+                spanElem.addEventListener('click', ()=>{stage = removeElement(divs,spanElem,stage)}, {once:true});
                 elements.push(spanElem);
                 totalPrice += Number(price);
             }        
