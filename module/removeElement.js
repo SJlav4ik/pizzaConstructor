@@ -1,3 +1,5 @@
+import drawPizza from "./drawPizza.js";
+
 export default function removeElement(element,currentElem){
     element.className='';
     let priceElem = document.getElementById('totalPrice');
@@ -14,4 +16,5 @@ export default function removeElement(element,currentElem){
             stage--;
             drawPizza(stage);
         } 
+        return stage; 
 }
